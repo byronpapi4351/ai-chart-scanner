@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignalIQ | AI Chart Scanner</title>
+    <meta
+      name="description"
+      content="AI chart scanner website with an actionable strategies library for technical analysis."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SignalIQ</div>
+            <div class="brand-tag">AI Market Scanner</div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#scanner">Scanner</a>
+          <a href="#library">Strategies</a>
+          <a href="#signals">AI Signals</a>
+          <a href="#insights">Insights</a>
+        </nav>
+
+        <button class="primary-btn">Launch Scanner</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">AI-powered market intelligence</span>
+            <h1>Find trade-ready setups across crypto, FX, and equities.</h1>
+            <p>
+              SignalIQ scans price action, trend structure, momentum, and volatility to surface
+              high-conviction opportunities with explainable AI insights.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-btn">Run live scan</button>
+              <button class="secondary-btn">View strategy library</button>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <strong>2,314</strong>
+                <span>Markets scanned</span>
+              </div>
+              <div class="metric-card">
+                <strong>92%</strong>
+                <span>Signal confidence</span>
+              </div>
+              <div class="metric-card">
+                <strong>18</strong>
+                <span>Active strategies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="signal-board">
+              <div class="board-header">
+                <span>AI scanner</span>
+                <span class="status-pill">Live</span>
+              </div>
+
+              <div class="chart-box">
+                <div class="chart-grid"></div>
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+
+              <div class="mini-list">
+                <div class="mini-item success">
+                  <span>BTC/USD</span>
+                  <strong>+4.8%</strong>
+                </div>
+                <div class="mini-item alert">
+                  <span>NVDA</span>
+                  <strong>Breakout</strong>
+                </div>
+                <div class="mini-item neutral">
+                  <span>EUR/USD</span>
+                  <strong>Range</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="scanner" class="scanner-panel panel">
+          <div class="panel-top">
+            <div>
+              <span class="panel-kicker">Scanner</span>
+              <h2>Multi-asset opportunity engine</h2>
+            </div>
+            <div class="filter-group" aria-label="Market filters">
+              <button class="filter-chip active">All</button>
+              <button class="filter-chip">Bullish</button>
+              <button class="filter-chip">Breakout</button>
+              <button class="filter-chip">Reversal</button>
+            </div>
+          </div>
+
+          <div class="results-grid" id="scannerResults"></div>
+        </section>
+
+        <section id="library" class="panel">
+          <div class="panel-top">
+            <div>
+              <span class="panel-kicker">Strategy library</span>
+              <h2>Modular systems for every market regime</h2>
+            </div>
+            <button class="secondary-btn">Browse all strategies</button>
+          </div>
+
+          <div class="strategy-grid" id="strategyGrid"></div>
+        </section>
+
+        <section id="signals" class="panel insight-panel">
+          <div class="panel-top">
+            <div>
+              <span class="panel-kicker">AI signals</span>
+              <h2>Why the model is flagging these moves</h2>
+            </div>
+          </div>
+
+          <div class="signals-list" id="signalList"></div>
+        </section>
+
+        <section id="insights" class="panel stats-panel">
+          <div class="panel-top">
+            <div>
+              <span class="panel-kicker">Insights</span>
+              <h2>Market regime snapshot</h2>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="mini-stat">
+              <span>Risk-on</span>
+              <strong>61%</strong>
+            </div>
+            <div class="mini-stat">
+              <span>Trend strength</span>
+              <strong>Above Avg</strong>
+            </div>
+            <div class="mini-stat">
+              <span>Volatility</span>
+              <strong>Elevated</strong>
+            </div>
+            <div class="mini-stat">
+              <span>Best setup</span>
+              <strong>Breakout</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
